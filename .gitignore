@@ -1,4 +1,16 @@
-.sass-cache/
+# Ignore compiled CSS files
+*.css
 *.css.map
-*.sass.map
-*.scss.map
+
+# Ignore SASS cache and temporary files
+.sass-cache/
+*.sassc
+
+# Optional: Ignore output folders if you're compiling to a specific directory
+/public/css/
+/dist/css/
+/build/css/
+
+# Ignore macOS and IDE-specific files (optional but common)
+.DS_Store
+.vscode/
