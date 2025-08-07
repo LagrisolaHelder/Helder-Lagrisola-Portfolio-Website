@@ -151,5 +151,26 @@ body{
     p{
          font-size: 20px;
          max-width: 800px;
+         margin-bottom: 20px;
+    }
+
+    .skills{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        .skill{
+            padding: 10px 20px;
+  
+            transition: all ease 0.3s;
+            font-size: 16px;
+            cursor: default;
+            border-radius: 10px;
+            border: 1px solid $TextColor;
+            &:hover{
+                background-color: $TextColor;
+                color: $BgColor;
+            }
+
+        }
     }
 }
