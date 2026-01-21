@@ -13,6 +13,9 @@
         #bg-canvas { position: fixed; top: 0; left: 0; z-index: -1; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body class="bg-slate-950 text-slate-200">
     <canvas id="bg-canvas"></canvas>
@@ -24,20 +27,22 @@
     </nav>
 
     <main class="ml-20">
-        <section id="hero" class="min-h-screen flex items-center px-12 md:px-24">
-            <div class="max-w-3xl">
-                <span class="text-blue-400 font-bold tracking-widest uppercase text-sm">Front End Web Developer</span>
-                <h1 class="text-7xl md:text-9xl font-black mt-4 mb-6 leading-tight text-white">Helder<br>Lagrisola</h1>
-                <p class="text-lg text-slate-400 leading-relaxed mb-8">
-                    I create responsive, user-friendly websites with a focus on great design and smooth functionality. 
-                    Turning ideas into interactive digital experiences.
-                </p>
-                <div class="flex gap-6 text-2xl">
-                    <a href="#" class="hover:text-blue-400 transition-colors"><i class="devicon-github-original"></i></a>
-                    <a href="#" class="hover:text-blue-400 transition-colors"><i class="devicon-linkedin-plain"></i></a>
-                </div>
-            </div>
-        </section>
+<section id="hero" class="min-h-screen flex flex-col md:flex-row items-center px-12 md:px-24 py-20">
+    <div class="w-full md:w-1/2 z-10">
+        <span class="text-blue-400 font-bold tracking-widest uppercase text-sm">Front End Web Developer</span>
+        <h1 class="text-6xl md:text-8xl font-black mt-4 mb-6 leading-tight text-white">Helder<br>Lagrisola</h1>
+        <p class="text-lg text-slate-400 leading-relaxed mb-8 max-w-lg">
+            I create responsive, user-friendly websites with a focus on great design and smooth functionality. 
+        </p>
+        <div class="flex gap-6 text-2xl">
+            <a href="#" class="hover:text-blue-400 transition-colors"><i class="devicon-github-original"></i></a>
+            <a href="#" class="hover:text-blue-400 transition-colors"><i class="devicon-linkedin-plain"></i></a>
+        </div>
+    </div>
+
+    <div id="hero-3d-container" class="w-full md:w-1/2 h-[400px] md:h-[600px] flex items-center justify-center cursor-grab active:cursor-grabbing">
+        </div>
+</section>
 
         <section id="about" class="min-h-screen flex items-center px-12 md:px-24 bg-slate-900/50">
             <div class="grid md:grid-cols-2 gap-16 items-center">
